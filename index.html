@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pikachu — Portfolio</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="./">⚡ Pikachu</a>
+      <nav class="nav-links">
+        <a href="#projects">Projects</a>
+        <a href="secret/">Secret</a>
+        <button id="themeToggle" class="btn btn-ghost" aria-label="Toggle dark mode">🌓</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Hi, I’m <span class="grad">Pikachu</span>.</h1>
+        <p class="lead">
+          First-year B.Tech @ IIT. I build crisp UIs, experiment with AI/ML, and ship ideas fast.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#projects">See Projects</a>
+          <a class="btn btn-ghost" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="blob"></div>
+        <div class="card stat">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">Mini Projects</div>
+        </div>
+        <div class="card stat delay">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Active Repos</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="grid">
+        <a class="card project" href="projects/portfolio/">
+          <h3>Personal Portfolio</h3>
+          <p>Responsive portfolio with smooth animations and clean typography.</p>
+          <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JS</span>
+        </a>
+
+        <a class="card project" href="projects/demo-app/">
+          <h3>Demo App</h3>
+          <p>Vanilla JS app scaffold to kickstart experiments.</p>
+          <span class="pill">Vanilla JS</span><span class="pill">DOM</span>
+        </a>
+
+        <a class="card project" href="secret/">
+          <h3>Secret Notes</h3>
+          <p>Casually protected page (client-side SHA-256 check).</p>
+          <span class="pill">Security*</span><span class="pill">JS</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Pikachu. Built with ❤️ and caffeine.</p>
+      <div class="footer-links">
+        <a href="mailto:you@example.com">Email</a>
+        <a href="https://linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
